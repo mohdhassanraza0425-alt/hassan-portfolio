@@ -222,23 +222,41 @@ export default function Home() {
             technology projects.
           </p>
 
-          <div className="mt-8">
+          <div className="mt-8 flex flex-wrap gap-6">
             <a
               href="mailto:mohdhassanraza0425@gmail.com"
               className="text-lg font-medium text-white underline underline-offset-8"
             >
               Email Me
             </a>
-          </div>
 
-          <div className="mt-4">
             <a
               href="tel:+917330930425"
               className="text-lg font-medium text-white underline underline-offset-8"
             >
               +91 73309 30425
             </a>
-         </div>
+
+            <a
+              href="https://github.com/mohdhassanraza0425-alt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-lg font-medium text-white underline underline-offset-8"
+            >
+              <SiGit aria-hidden="true" />
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/hassan-raza-a2a504285"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-lg font-medium text-white underline underline-offset-8"
+            >
+              
+              LinkedIn
+            </a>
+          </div>
         </div>
       </section>
 
