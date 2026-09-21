@@ -5,6 +5,9 @@ import {
   SiPostgresql,
   SiScikitlearn,
   SiGit,
+  SiHtml5,
+  SiCss,
+  SiJavascript,
 } from "react-icons/si";
 import { FaChartBar, FaChartLine } from "react-icons/fa";
 
@@ -87,7 +90,6 @@ export default function Home() {
               />
             </div>
           </div>
-
         </div>
       </section>
 
@@ -131,6 +133,9 @@ export default function Home() {
           <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
             {[
               { name: "Python", icon: SiPython },
+              { name: "HTML", icon: SiHtml5 },
+              { name: "CSS", icon: SiCss },
+              { name: "JavaScript", icon: SiJavascript },
               { name: "SQL", icon: SiPostgresql },
               { name: "NumPy", icon: SiNumpy },
               { name: "Pandas", icon: SiPandas },
@@ -143,7 +148,10 @@ export default function Home() {
                 key={name}
                 className="flex flex-col items-center gap-3 rounded-xl border border-zinc-800 bg-zinc-900/50 p-5 text-center text-zinc-200"
               >
-                <Icon className="text-3xl text-blue-400" aria-hidden="true" />
+                <Icon
+                  className="text-3xl text-blue-400"
+                  aria-hidden="true"
+                />
                 <span>{name}</span>
               </div>
             ))}
@@ -168,9 +176,11 @@ export default function Home() {
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
               <p className="text-sm text-blue-400">Currently Building</p>
+
               <h3 className="mt-3 text-xl font-semibold">
                 RAG Application
               </h3>
+
               <p className="mt-3 leading-7 text-zinc-400">
                 An AI application using Retrieval-Augmented Generation to
                 work with user-provided information.
@@ -179,9 +189,11 @@ export default function Home() {
 
             <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
               <p className="text-sm text-blue-400">In Development</p>
+
               <h3 className="mt-3 text-xl font-semibold">
                 Institute Management System
               </h3>
+
               <p className="mt-3 leading-7 text-zinc-400">
                 A software system designed to manage students, attendance,
                 fees, exams, homework, and performance.
@@ -190,9 +202,11 @@ export default function Home() {
 
             <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
               <p className="text-sm text-blue-400">Planned</p>
+
               <h3 className="mt-3 text-xl font-semibold">
                 Machine Learning Application
               </h3>
+
               <p className="mt-3 leading-7 text-zinc-400">
                 A practical machine learning application that will be added
                 after the model development phase.
@@ -253,7 +267,6 @@ export default function Home() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-lg font-medium text-white underline underline-offset-8"
             >
-              
               LinkedIn
             </a>
           </div>
@@ -267,4 +280,3 @@ export default function Home() {
     </main>
   );
 }
-
