@@ -159,6 +159,7 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* Projects */}
       <section
         id="projects"
@@ -173,45 +174,96 @@ export default function Home() {
             What I'm building
           </h2>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
-              <p className="text-sm text-blue-400">Currently Building</p>
+          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+            {/* License Plate Detection */}
+            <div className="flex flex-col rounded-2xl border border-zinc-800 bg-zinc-900 p-6 transition hover:border-blue-500/50">
+              <p className="text-sm text-blue-400">
+                Computer Vision | Mini Project
+              </p>
+
+              <h3 className="mt-3 text-xl font-semibold">
+                License Plate Detection
+              </h3>
+
+              <p className="mt-3 flex-1 leading-7 text-zinc-400">
+                A computer vision project using Python and OpenCV
+                to detect vehicle license plates from webcam input.
+                The project uses Haar Cascade detection and
+                SQLite to store detection records.
+              </p>
+
+              <div className="mt-4 flex flex-wrap gap-2">
+                {["Python", "OpenCV", "SQLite", "Computer Vision"].map(
+                  (tech) => (
+                    <span
+                      key={tech}
+                      className="rounded-full border border-zinc-700 px-3 py-1 text-xs text-zinc-300"
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
+              </div>
+
+              <a
+                href="https://github.com/mohdhassanraza0425-alt/license-number-plate-detection"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex w-fit items-center rounded-full bg-white px-5 py-2.5 text-sm font-medium text-black transition hover:bg-zinc-200"
+              >
+                View on GitHub ↗
+              </a>
+            </div>
+
+            {/* RAG Application */}
+            <div className="flex flex-col rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
+              <p className="text-sm text-blue-400">
+                Currently Building
+              </p>
 
               <h3 className="mt-3 text-xl font-semibold">
                 RAG Application
               </h3>
 
-              <p className="mt-3 leading-7 text-zinc-400">
-                An AI application using Retrieval-Augmented Generation to
-                work with user-provided information.
+              <p className="mt-3 flex-1 leading-7 text-zinc-400">
+                An AI application using Retrieval-Augmented Generation
+                to work with user-provided information.
               </p>
             </div>
 
-            <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
-              <p className="text-sm text-blue-400">In Development</p>
+            {/* Institute Management System */}
+            <div className="flex flex-col rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
+              <p className="text-sm text-blue-400">
+                In Development
+              </p>
 
               <h3 className="mt-3 text-xl font-semibold">
                 Institute Management System
               </h3>
 
-              <p className="mt-3 leading-7 text-zinc-400">
-                A software system designed to manage students, attendance,
-                fees, exams, homework, and performance.
+              <p className="mt-3 flex-1 leading-7 text-zinc-400">
+                A software system designed to manage students,
+                attendance, fees, exams, homework, and performance.
               </p>
             </div>
 
-            <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
-              <p className="text-sm text-blue-400">Planned</p>
+            {/* Machine Learning Application */}
+            <div className="flex flex-col rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
+              <p className="text-sm text-blue-400">
+                Planned
+              </p>
 
               <h3 className="mt-3 text-xl font-semibold">
                 Machine Learning Application
               </h3>
 
-              <p className="mt-3 leading-7 text-zinc-400">
-                A practical machine learning application that will be added
-                after the model development phase.
+              <p className="mt-3 flex-1 leading-7 text-zinc-400">
+                A practical machine learning application that will
+                be added after the model development phase.
               </p>
             </div>
+
           </div>
         </div>
       </section>
